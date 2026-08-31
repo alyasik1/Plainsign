@@ -175,6 +175,34 @@ Plainsign can be wrong in three ways and says so on the page:
 - **Wrong inputs.** The reasoning is only as good as the simulation
   feeding it, and the simulator is not written yet.
 
+## Support this work
+
+Plainsign is free, has no token, sells nothing, and gives donors nothing
+in return. That last part is deliberate: a donation that buys a benefit
+is not a donation.
+
+**[Donate on Giveth →](https://giveth.io/project/plainsign-read-before-you-sign)**
+
+100% of every donation reaches the project — Giveth takes no fee and sits
+in the middle of nothing.
+
+Donations pay for three things and nothing else: **infrastructure**
+(simulation needs archive node access or a paid provider, plus hosting and
+reference data), **maintenance** (attack patterns change and reference
+data goes stale, and an unmaintained security tool is worse than none,
+because people keep trusting it), and **development time** — a single
+maintainer working in public, where every funded hour produces commits
+anyone can read.
+
+Incoming donations are visible on chain, and a spending summary is
+published here alongside the commit history, so the money and the work
+can be checked against each other.
+
+If you cannot donate, the two most useful things you can give instead are
+a transaction Plainsign should have flagged and didn't, or a false alarm
+it raised — both open as issues, and false alarms are treated as real
+bugs.
+
 ## Licence
 
 MIT.
