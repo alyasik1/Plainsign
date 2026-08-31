@@ -1,0 +1,27 @@
+{
+  "transaction": {
+    "signer": "0xYourAddress",
+    "to": "0x9f21b4c02e7a1d3f5c8b0e6a94d2f7c1b8e03a45",
+    "chain": "Ethereum",
+    "function": "approve(address,uint256)",
+    "displayed_intent": "Claim your airdrop"
+  },
+  "simulation": {
+    "approvals": [
+      {
+        "token": { "address": "0xa0b8...eb48", "symbol": "USDC", "decimals": 6 },
+        "spender": "0x9f21b4c02e7a1d3f5c8b0e6a94d2f7c1b8e03a45",
+        "spender_label": "an unnamed contract",
+        "amount": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+      }
+    ],
+    "counterparties": [
+      {
+        "address": "0x9f21b4c02e7a1d3f5c8b0e6a94d2f7c1b8e03a45",
+        "deployed_days_ago": 2,
+        "verified_source": false,
+        "has_code": true
+      }
+    ]
+  }
+}

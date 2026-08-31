@@ -1,0 +1,134 @@
+────────────────────────────────────────────────────────────────────
+Bybit, 21 February 2025
+────────────────────────────────────────────────────────────────────
+Your wallet shows:  "Send 30,000 ETH to the warm wallet"
+
+Do not sign this.
+Control of the cold wallet passes to someone else.
+
+What happens immediately
+  - Nothing leaves your wallet.
+
+What can happen afterwards
+  - 0x4766…86e2, an attacker-controlled contract takes control of the cold wallet.
+
+Why this is flagged
+  !! This changes who controls the contract
+     The implementation the wallet runs on the cold wallet changes from the audited Safe logic to 0x4766…86e2, an attacker-controlled contract. Afterwards, control over the funds held there belongs to someone else, and no further signature from you is needed.
+     → Do not sign until the new controller is independently confirmed.
+  !! What you were shown is not what this does
+     Your wallet described this as "Send 30,000 ETH to the warm wallet". Simulating it shows that it also grants permissions or hands over control. The screen is not the transaction.
+     → Trust the simulated result over the description.
+   ! This contract was created very recently
+     The contract at 0x9622…7242 was deployed 2 days ago. Draining campaigns run on contracts only days old. The established protocol you were looking for is not new.
+     → Check the address against the project's own documentation.
+   · Nobody can read what this contract does
+     The source code for 0x9622…7242 has not been published, so its behaviour cannot be checked by you or anyone else.
+
+What to do
+  1. Do not sign until the new controller is independently confirmed.
+  2. Trust the simulated result over the description.
+  3. Check the address against the project's own documentation.
+
+────────────────────────────────────────────────────────────────────
+0xb0b8…40c7, 14 October 2024
+────────────────────────────────────────────────────────────────────
+Your wallet shows:  "Signature request"
+
+Do not sign this.
+An address later reported as a phishing address gains the right to take your PEPE whenever they choose.
+
+What happens immediately
+  - Nothing leaves your wallet.
+
+What can happen afterwards
+  - an address later reported as a phishing address can take unlimited PEPE at any time from now on, without asking you again.
+
+Why this is flagged
+  !! You are granting unlimited, open-ended permission
+     an address later reported as a phishing address will be able to move all of your PEPE, now and in the future. It does not expire and does not ask again. It stays active until you revoke it.
+     → Approve only the amount you are spending right now. If the site will not let you, that is a reason to leave, not to sign.
+  !! This is a signature, not a transaction — and it still moves money
+     It costs no gas and will not show up in your transaction history, which is exactly why it looks harmless. It authorises someone to take your tokens later, without asking you again.
+     → Treat a free signature with the same suspicion as a payment. Sign-in requests never need permission over your tokens.
+  !! This address has been publicly reported
+     the address labelled Fake_Phishing442846 is listed as malicious: labelled Fake_Phishing442846 and linked to a $32M drain two weeks earlier.
+     → Do not sign. Close the page you came from.
+  !! Your wallet is not telling you what this does
+     The request is labelled "Signature request" and nothing more, yet it hands over control of your tokens. A request that will not say what it does is not one you can judge from the screen.
+     → Read the effects below instead of the label, and sign nothing you cannot restate in your own words.
+   · Nobody can read what this contract does
+     The source code for the address labelled Fake_Phishing442846 has not been published, so its behaviour cannot be checked by you or anyone else.
+
+What to do
+  1. Approve only the amount you are spending right now. If the site will not let you, that is a reason to leave, not to sign.
+  2. Treat a free signature with the same suspicion as a payment. Sign-in requests never need permission over your tokens.
+  3. Do not sign. Close the page you came from.
+  4. Read the effects below instead of the label, and sign nothing you cannot restate in your own words.
+
+────────────────────────────────────────────────────────────────────
+12,083 spWETH, 28 September 2024
+────────────────────────────────────────────────────────────────────
+Your wallet shows:  "Signature request"
+
+Do not sign this.
+An unnamed address gains the right to take your spWETH whenever they choose.
+
+What happens immediately
+  - Nothing leaves your wallet.
+
+What can happen afterwards
+  - an unnamed address can take unlimited spWETH at any time from now on, without asking you again.
+
+Why this is flagged
+  !! You are granting unlimited, open-ended permission
+     an unnamed address will be able to move all of your spWETH, now and in the future. It does not expire and does not ask again. It stays active until you revoke it.
+     → Approve only the amount you are spending right now. If the site will not let you, that is a reason to leave, not to sign.
+  !! This is a signature, not a transaction — and it still moves money
+     It costs no gas and will not show up in your transaction history, which is exactly why it looks harmless. It authorises someone to take your tokens later, without asking you again.
+     → Treat a free signature with the same suspicion as a payment. Sign-in requests never need permission over your tokens.
+  !! Your wallet is not telling you what this does
+     The request is labelled "Signature request" and nothing more, yet it hands over control of your tokens. A request that will not say what it does is not one you can judge from the screen.
+     → Read the effects below instead of the label, and sign nothing you cannot restate in your own words.
+   · Nobody can read what this contract does
+     The source code for the spender contract used in the campaign has not been published, so its behaviour cannot be checked by you or anyone else.
+
+What to do
+  1. Approve only the amount you are spending right now. If the site will not let you, that is a reason to leave, not to sign.
+  2. Treat a free signature with the same suspicion as a payment. Sign-in requests never need permission over your tokens.
+  3. Read the effects below instead of the label, and sign nothing you cannot restate in your own words.
+
+────────────────────────────────────────────────────────────────────
+Transfer to an address that does not exist yet
+────────────────────────────────────────────────────────────────────
+Your wallet shows:  "Send 4,200 USDC"
+
+Stop and check this.
+4,200 USDC goes to an address you have not used before.
+
+What happens immediately
+  - 4,200 USDC leaves your wallet.
+
+Why this is flagged
+   ! Nothing exists at this address yet
+     There is no contract and no history at the destination address. A destination can be calculated in advance and the code put there after you send, which is a known way of staying invisible to checks that ask how old a contract is.
+     → Confirm the address from the project's own site before sending.
+   ! This moves 95% of your USDC
+     Transactions that empty a balance are worth a second look, because there is nothing left to recover from if it is wrong.
+     → Send a small test amount first and confirm it arrives.
+
+What to do
+  1. Confirm the address from the project's own site before sending.
+  2. Send a small test amount first and confirm it arrives.
+
+────────────────────────────────────────────────────────────────────
+An ordinary payment
+────────────────────────────────────────────────────────────────────
+Your wallet shows:  "Send 50 USDC"
+
+Nothing dangerous found.
+50 USDC goes to 0x742d…f44e.
+
+What happens immediately
+  - 50 USDC leaves your wallet.
+

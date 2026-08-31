@@ -1,0 +1,23 @@
+{
+  "transaction": {
+    "signer": "0xYourAddress",
+    "to": "0x742d35cc6634c0532925a3b844bc454e4438f44e",
+    "chain": "Base",
+    "expected_chain": "Base",
+    "function": "transfer(address,uint256)",
+    "displayed_intent": "Send 50 USDC"
+  },
+  "simulation": {
+    "balance_changes": [
+      {
+        "token": { "address": "0xa0b8...eb48", "symbol": "USDC", "decimals": 6 },
+        "delta": -50000000,
+        "balance_before": 1200000000
+      }
+    ],
+    "recent_addresses": ["0x742d35cc6634c0532925a3b844bc454e4438f44e"],
+    "counterparties": [
+      { "address": "0x742d35cc6634c0532925a3b844bc454e4438f44e", "is_contract": false, "seen_before": true }
+    ]
+  }
+}
